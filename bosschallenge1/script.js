@@ -4,14 +4,16 @@ var randomNo2 = Math.floor(Math.random() * 6) + 1;
 var ans1 = 6 - randomNo1;
 var ans2 = 6 - randomNo2;
 
-if(ans1 < ans2){
-    document.querySelector("h1").innerHTML = "Player 1 Won";
-}
-else if (ans2 < ans1){
-    document.querySelector("h1").innerHTML = "Player 2 Won";
-}
-else{
-    document.querySelector("h1").innerHTML = "Draw";
+function result(){
+    if(ans1 < ans2){
+        document.querySelector("h1").innerHTML = "Player 1 Won";
+    }
+    else if (ans2 < ans1){
+        document.querySelector("h1").innerHTML = "Player 2 Won";
+    }
+    else{
+        document.querySelector("h1").innerHTML = "Draw";
+    }
 }
 
 
