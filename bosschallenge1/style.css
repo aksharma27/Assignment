@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+* {
+    /* padding: 4px; */
+    margin: 0;
+    /* background-color: red; */
+}
+
+body {
+    background-color: rgb(96, 12, 29);
+}
+
+.red {
+    background-color: black;
+}
+
+
+.cinzel {
+    color: #eee20e;
+    font-family: 'Cinzel', serif;
+}
+
+.dice {
+    border-radius: 20px;
+}
+
+h1 {
+    /* background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+    padding: 15px;
+    text-align: center;
+}
+
+.white {
+
+    /* text-align: ; */
+    color: white
+}
+
+.box {
+    box-shadow: 21px 16px 20px 18px rgb(28, 28, 28);
+}
+
+.row {
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+    margin: 5%;
+}
+
+
+
+.dice1 {
+    background-color: black;
+    /* padding-bottom: 30%; */
+}
+
+.dice2 {
+    background-color: black;
+    /* padding-bottom: 30%; */
+}
+
+
+.circle {
+    padding: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.scores {
+    color: wheat;
+    display: inline;
+}
