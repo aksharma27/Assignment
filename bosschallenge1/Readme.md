@@ -8,4 +8,6 @@ This project is completely based on pure html, css and vanila js.
 
 ###Here are some screenshots:
 
-![Screenshot](img.png);
+<img src="img.png"
+     alt="Screenshot of the game"
+     style="float: left; margin-right: 10px;" />
