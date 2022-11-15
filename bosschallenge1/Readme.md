@@ -11,3 +11,4 @@ This project is completely based on pure html, css and vanila js.
 <img src="img.png"
      alt="Screenshot of the game"
      style="float: left; margin-right: 10px;" />
+     ![Alt text](img.png)
