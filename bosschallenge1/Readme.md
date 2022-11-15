@@ -7,3 +7,5 @@ winner is announced.
 This project is completely based on pure html, css and vanila js.
 
 ###Here are some screenshots:
+
+![Screenshot](img.png);
