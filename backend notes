@@ -1,0 +1,12 @@
+java requires more computation cost than js. Majorly banking systems use java
+than js.
+
+js uses non-blocking i-o model => a functn will not wait to fetch data from db
+rather it will wait for the call back and the event will fire when that 
+particular i-o resolver.
+
+
+
+Modules of node.js
+Fs, libuv
+

@@ -1,6 +1,6 @@
 
 
-debugger 
+// debugger 
 function result(){
     // alert("hello");
     var randomNo1 = Math.floor(Math.random() * 6) + 1;
