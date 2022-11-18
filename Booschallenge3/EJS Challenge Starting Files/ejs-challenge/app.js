@@ -21,7 +21,11 @@ app.get("/", (req, res)=>{
 });
 
 app.get("/about", (req, res)=>{
-  res.render("aboutt", {aboutContent : aboutContent});
+  res.render("about", {aboutContent : aboutContent});
+});
+
+app.get("/contact", (req,res)=>{
+  res.render("contact", {contactContent : contactContent});
 })
 
 
