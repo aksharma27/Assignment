@@ -5,4 +5,17 @@
         <%= startingContent %>
     </p>
 
-    <%- include("./Partials/footer"); -%>
+    <% for(var i=0; i < post.length; i++){ %>
+
+        <!-- <%console.log(post[i].title);%> -->
+        <h1>
+            <%= post[i].title %>
+        </h1>
+        <p>
+            <%= post[i].content %>
+        </p>
+
+
+        <% } %>
+
+            <%- include("./Partials/footer"); -%>
