@@ -38,14 +38,21 @@ app.post('/compose',(req, res)=>{
   
   const post = {
       title : req.body.postTitle,
-      content : req.body.postBody
+      content : req.body.postBody,
+      requests : reqTitle
   };
   postContent.push(post)
   res.redirect("/");
 });
 
 
+// route parametersS
 
+// app.get("/posts/parameterName", callback()=>{})
+app.get("/posts/:postName", (req, res)=>{
+  // console.log(req.params.postName);
+  const reqTitle = req.params.postName;
+});
 
 
 
