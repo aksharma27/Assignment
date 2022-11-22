@@ -19,6 +19,7 @@ function nextSequence() {
 
     gamePattern[length] = randomChoosenColor;
     gamePattern.push(randomChoosenColor);
+
     $("#" + randomChoosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
     var audio = new Audio("sounds/" + randomChoosenColor + ".mp3");
     audio.play();
@@ -58,6 +59,12 @@ function checkAnswer(currentLevel){
         startOver();
     }
 }
+
+
+function playSound(name) {
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
+  }
 
 
 
