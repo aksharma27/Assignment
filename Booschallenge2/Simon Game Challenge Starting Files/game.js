@@ -7,6 +7,12 @@ var length = gamePattern.length;
 let buttonColors = ["red", "blue", "green", "yellow"];
 
 
+$(document).keypress(function(){
+    if(!started){
+        $('#level-title').text("level" + level) ;
+        started = true;
+    }
+});
 
 
 
@@ -26,12 +32,7 @@ function nextSequence() {
     playSound(randomChoosenColor);
 }
 
-$(document).keypress(function(){
-    if(!started){
-        $('#level-title').text("level" + level) ;
-        started = true;
-    }
-});
+
 
 $(".btn").click(()=>{
     let userChosenColor = $(this).attr("id");
@@ -42,6 +43,7 @@ $(".btn").click(()=>{
 });
 
 function checkAnswer(currentLevel){
+
     if(gamePattern[currentLevel] === userClickedPattern[currentLevel]){
         if(userClickedPattern.length === gamePattern.length){
             setTimeout(()=>{
