@@ -1,5 +1,6 @@
 // alert("working")
 let gamePattern = [];
+let strted = false;
 var length = gamePattern.length;
 let buttonColors = ["red", "blue", "green", "yellow"];
 
@@ -14,4 +15,15 @@ function nextSequence() {
     audio.play();
 }
 
+$(document).keypress(function(){
+    if(!st)
+})
 
+
+
+
+function startOver(){
+    level = 0; 
+    gamepattern = [];
+    started = false;
+}
