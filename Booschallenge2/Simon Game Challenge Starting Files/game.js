@@ -21,8 +21,9 @@ function nextSequence() {
     gamePattern.push(randomChoosenColor);
 
     $("#" + randomChoosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
-    var audio = new Audio("sounds/" + randomChoosenColor + ".mp3");
-    audio.play();
+    // var audio = new Audio("sounds/" + randomChoosenColor + ".mp3");
+    // audio.play();
+    playSound(randomChoosenColor);
 }
 
 $(document).keypress(function(){
