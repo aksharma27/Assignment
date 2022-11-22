@@ -1,8 +1,13 @@
 // alert("working")
 let gamePattern = [];
-let strted = false;
+let started = false;
+let level = 0;
 var length = gamePattern.length;
 let buttonColors = ["red", "blue", "green", "yellow"];
+
+
+
+
 
 function nextSequence() {
     var randomNo = Math.floor(Math.random() * 3) + 1;
@@ -16,8 +21,11 @@ function nextSequence() {
 }
 
 $(document).keypress(function(){
-    if(!st)
-})
+    if(!started){
+        $('#level-title').text("level" + level) ;
+        started = true;
+    }
+});
 
 
 
