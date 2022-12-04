@@ -7,21 +7,22 @@ import notes from './Notes';
 
 // console.log(notes);
 function createNotes(noteItem){
-  return 
+  return(  
   <Note 
     title = {noteItem.title}
     content = {noteItem.content}
   />
+  )
 }
 
 function App() {
   return (
     <>
       <Header/>
-      <Note
-        title= "This is the note title"
-        content = 'This is the note content'
-      />
+     
+
+{notes.map(createNotes)}
+
       <Footer/>
     </>
   );
