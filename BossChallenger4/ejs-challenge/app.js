@@ -19,7 +19,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //connect to mongodb
-mongoose.connect("mongodb+srv://aksharma27mjm:Abhishek02@cluster0.9hiqs8c.mongodb.net/MERN_DATA?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://aksharma27:Abhishek02@cluster0.muqctvl.mongodb.net/Assignment?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{
+  console.log("db connected");
+}).catch((err)=>{
+  console.log("DB connection error: " + err);
+});
 //db schema:
 const postSchema = {
   title: String,
